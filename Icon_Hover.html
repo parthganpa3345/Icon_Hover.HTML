@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+    <style>
+        .main {
+            height: 80px;
+            width: 80px;
+            background: #000;
+            margin: 100px auto;
+            position: relative;
+            z-index: 0;
+            text-align: center;
+            line-height: 80px;
+        }
+        
+        .effect {
+            height: 80px;
+            width: 80px;
+            background: red;
+            transform: scale(0);
+            transition: .35s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .main:hover .effect {
+            transform: scale(1);
+        }
+        
+        .fa-github {
+            color: #fff;
+            font-size: 20px;
+            transition: .60s;
+        }
+        
+        .fa-github:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <i class="fa-brands fa-github"></i>
+        <div class="effect"></div>
+    </div>
+
+</body>
+
+</html>
